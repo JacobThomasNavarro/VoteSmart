@@ -1,0 +1,115 @@
+﻿@model VoteSmart.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.streetAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.streetAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.city)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.city)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.stateCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.stateCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.zipcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.zipcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lng)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.republican)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.republican)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.democrat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.democrat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.independant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.independant)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.undecided)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.undecided)
+        </dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
